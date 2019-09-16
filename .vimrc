@@ -177,8 +177,8 @@ map <S-Right> :tabn<CR>
 map! <C-O> <C-Y>,
 imap <C-k> <C-y>,
 imap <C-j> <ESC>
-imap jj <ESC>
-imap JJ <ESC>
+imap fd <ESC>
+imap FD <ESC>
 set mouse=v
 nnoremap <leader>CC <Plug>CRV_CRefVimInvoke
 "去空行  
@@ -278,7 +278,7 @@ endif
 "当打开nerdtree后重定位到主窗口
 "autocmd VimEnter * wincmd p
 "当打开vim时自动打开Tagbar
-autocmd vimenter *  Tagbar
+"autocmd vimenter *  Tagbar
 
 " 只剩 NERDTree时自动关闭
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
